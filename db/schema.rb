@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_06_073716) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_06_151736) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_06_073716) do
     t.bigint "to_do_list_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "completed_at"
     t.index ["to_do_list_id"], name: "index_to_do_items_on_to_do_list_id"
   end
 
