@@ -2,7 +2,7 @@
 
 <%= render @to_do_list %>
 
-<div id="todo_items_wrapper">
+<div id="to_do_items_wrapper">
  <%= render @to_do_list.to_do_items %>
  <div id="form">
   <%= render "to_do_items/form" %>
@@ -15,3 +15,4 @@
 
   <%= button_to "Destroy this to do list", @to_do_list, method: :delete %>
 </div>
+

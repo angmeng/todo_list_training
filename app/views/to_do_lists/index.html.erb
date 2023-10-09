@@ -1,3 +1,15 @@
+<% @to_do_lists.each do |to_do_list| %>
+<div class="index_row clearfix">
+  <h2 class="to_do_list_title"><%= link_to to_do_list.title, to_do_list 
+%></h2>
+  <p class="to_do_list_sub_title"><%= to_do_list.description %></p>
+</div>
+<% end %>
+<div class="links">
+  <%= link_to "New to_do List", new_to_do_list_path %>
+</div>
+
+<!---  
 <p style="color: green"><%= notice %></p>
 
 <h1>To do lists</h1>
@@ -19,3 +31,4 @@
 </div>
 
 <%= link_to "New to do list", new_to_do_list_path %>
+-->
